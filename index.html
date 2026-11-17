@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OZK Logistics — вантажоперевезення по Україні та ЄС</title>
+  <meta name="description" content="OZK Logistics — B2B вантажоперевезення по Україні та в ЄС: FTL/LTL, міжнародні рейси, митний супровід, страхування CMR і GPS-трекінг 24/7. Онлайн-калькулятор вартості.">
+  <meta name="author" content="Олександр Захарчук">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B1F3A'/><text x='50' y='66' font-size='46' text-anchor='middle' fill='%23FF7A00' font-family='Arial' font-weight='bold'>OZK</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== ВЕРХНЯ ПАНЕЛЬ ===== -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <span>⚡ Працюємо без світла: генератори + Starlink — диспетчерська 24/7</span>
+    <span class="topbar__right"><a href="tel:+380441234567">+38 (044) 123-45-67</a> · <a href="mailto:info@ozk-logistics.com.ua">info@ozk-logistics.com.ua</a></span>
+  </div>
+</div>
+
+<!-- ===== ШАПКА ===== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#hero" class="logo" aria-label="OZK Logistics — на головну">
+      <span class="logo__mark">OZK</span><span class="logo__text">Logistics</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#services">Послуги</a>
+      <a href="#calculator">Калькулятор</a>
+      <a href="#tracking">Трекінг</a>
+      <a href="#advantages">Переваги</a>
+      <a href="#routes">Маршрути</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+    <a href="#order" class="btn btn--accent header__cta">Замовити авто</a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="container hero__inner">
+    <div class="hero__text">
+      <span class="badge">B2B-логістика · Україна ⇄ ЄС</span>
+      <h1>Доставимо ваш вантаж <span class="accent">вчасно</span> — за тарифом, зафіксованим заздалегідь</h1>
+      <p class="hero__lead">Експрес-перевезення FTL/LTL по Україні, міжнародні рейси до Польщі, Німеччини та Румунії, митний супровід і повне CMR-страхування. Подача авто по Києву — <b>за 2–4 години</b>.</p>
+      <div class="hero__buttons">
+        <a href="#calculator" class="btn btn--accent">Розрахувати вартість</a>
+        <a href="#tracking" class="btn btn--ghost">Відстежити вантаж</a>
+      </div>
+      <ul class="hero__facts">
+        <li><b>24/7</b><span>GPS-трекінг</span></li>
+        <li><b>100%</b><span>рейсів застраховано</span></li>
+        <li><b>від 22 ₴</b><span>за кілометр</span></li>
+      </ul>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <svg viewBox="0 0 520 380" class="truck-svg">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#FF7A00"/><stop offset="1" stop-color="#FFB15C"/></linearGradient>
+        </defs>
+        <circle cx="300" cy="170" r="150" fill="rgba(255,255,255,0.06)"/>
+        <circle cx="300" cy="170" r="105" fill="rgba(255,255,255,0.06)"/>
+        <path d="M40 300 Q 200 230 300 170 T 500 60" stroke="#FF7A00" stroke-width="3" stroke-dasharray="10 10" fill="none" class="route-line"/>
+        <circle cx="40" cy="300" r="9" fill="#FF7A00"/><text x="56" y="322" fill="#cfe0ff" font-size="16" font-family="Inter">Київ</text>
+        <circle cx="500" cy="60" r="9" fill="#FF7A00"/><text x="430" y="40" fill="#cfe0ff" font-size="16" font-family="Inter">Варшава</text>
+        <g class="truck" transform="translate(150,200)">
+          <rect x="0" y="0" width="200" height="90" rx="8" fill="#F4F7FB"/>
+          <rect x="0" y="0" width="200" height="22" rx="8" fill="url(#g1)"/>
+          <text x="22" y="62" font-size="30" font-weight="800" font-family="Montserrat" fill="#0B1F3A">OZK</text>
+          <text x="98" y="62" font-size="16" font-family="Inter" fill="#0B1F3A">Logistics</text>
+          <path d="M200 25 h48 l32 34 v31 h-80 z" fill="#FF7A00"/>
+          <path d="M212 34 h32 l22 24 h-54 z" fill="#0B1F3A" opacity=".85"/>
+          <rect x="-6" y="88" width="292" height="8" rx="4" fill="#0B1F3A"/>
+          <circle cx="45" cy="104" r="20" fill="#0B1F3A"/><circle cx="45" cy="104" r="8" fill="#9fb3d1"/>
+          <circle cx="235" cy="104" r="20" fill="#0B1F3A"/><circle cx="235" cy="104" r="8" fill="#9fb3d1"/>
+        </g>
+      </svg>
+      <div class="hero__card">
+        <span class="dot dot--green"></span>
+        <div><b>OZK-2026-0417</b><small>Київ → Варшава · на кордоні Ягодин</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ЦИФРИ ===== -->
+<section class="stats">
+  <div class="container stats__grid">
+    <div class="stat"><b data-count="1200">0</b><span>рейсів виконано</span></div>
+    <div class="stat"><b data-count="180">0</b><span>B2B-клієнтів</span></div>
+    <div class="stat"><b data-count="4">0</b><span>країни маршрутів</span></div>
+    <div class="stat"><b data-count="98">0</b><span>% доставок вчасно</span></div>
+  </div>
+</section>
+
+<!-- ===== ПОСЛУГИ ===== -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">Що ми робимо</span>
+      <h2>Послуги для вашого бізнесу</h2>
+      <p>Власний автопарк до 3,5 т + перевірені партнери для великих і негабаритних вантажів</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="card__icon">🚚</div>
+        <h3>Експрес-доставка по Україні</h3>
+        <p>FTL — окреме авто під ваш вантаж; LTL — збірні вантажі від 1 палети. Фіксовані часові вікна доставки.</p>
+        <span class="card__price">від 600 ₴ / палета</span>
+      </article>
+      <article class="card">
+        <div class="card__icon">🌍</div>
+        <h3>Міжнародні перевезення</h3>
+        <p>Регулярні рейси Україна — Польща / Німеччина / Румунія. Контроль черг на кордоні та оптимальний пункт пропуску.</p>
+        <span class="card__price">від 28 ₴ / км</span>
+      </article>
+      <article class="card">
+        <div class="card__icon">📑</div>
+        <h3>Експедирування та митниця</h3>
+        <p>Митно-брокерські послуги, оформлення CMR, е-ТТН, T1, EX1. Документи підписуємо онлайн через «Вчасно» з КЕП.</p>
+        <span class="card__price">за домовленістю</span>
+      </article>
+      <article class="card">
+        <div class="card__icon">🛡️</div>
+        <h3>Страхування і трекінг</h3>
+        <p>CMR-страхування кожного рейсу та GPS-моніторинг 24/7 з автоматичними сповіщеннями в Telegram і на e-mail.</p>
+        <span class="card__price">включено в тариф</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== КАЛЬКУЛЯТОР ===== -->
+<section class="section section--dark" id="calculator">
+  <div class="container calc">
+    <div class="calc__info">
+      <span class="eyebrow eyebrow--light">Онлайн-калькулятор</span>
+      <h2>Дізнайтеся вартість за 10 секунд</h2>
+      <p>Попередній розрахунок за нашими відкритими тарифами: 22–28 ₴/км залежно від тоннажу або 600–800 ₴ за палетомісце для збірних вантажів. Ціну фіксуємо в договорі — без доплат «по факту».</p>
+      <ul class="checklist">
+        <li>Без прихованих комісій</li>
+        <li>Знижка до 10% для постійних клієнтів</li>
+        <li>Страхування CMR — уже в ціні</li>
+      </ul>
+    </div>
+    <form class="calc__form" id="calcForm" novalidate>
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab active" data-mode="ftl">Окреме авто (FTL)</button>
+        <button type="button" class="tab" data-mode="ltl">Збірний (LTL)</button>
+      </div>
+      <div class="field-row">
+        <label>Звідки
+          <select id="from">
+            <option value="Київ">Київ</option><option value="Львів">Львів</option><option value="Житомир">Житомир</option><option value="Вінниця">Вінниця</option><option value="Рівне">Рівне</option>
+          </select>
+        </label>
+        <label>Куди
+          <select id="to">
+            <option value="Львів">Львів</option><option value="Одеса">Одеса</option><option value="Дніпро">Дніпро</option><option value="Харків">Харків</option><option value="Варшава">Варшава 🇵🇱</option><option value="Берлін">Берлін 🇩🇪</option><option value="Бухарест">Бухарест 🇷🇴</option>
+          </select>
+        </label>
+      </div>
+      <div class="field-row mode-ftl">
+        <label>Тип авто
+          <select id="truck">
+            <option value="22">до 1,5 т (бус) — 22 ₴/км</option>
+            <option value="25" selected>до 3,5 т (Sprinter/Master) — 25 ₴/км</option>
+            <option value="28">до 10 т (партнерське авто) — 28 ₴/км</option>
+          </select>
+        </label>
+        <label>Відстань, км <input type="number" id="distance" min="1" value="540"></label>
+      </div>
+      <div class="field-row mode-ltl hidden">
+        <label>Кількість палет <input type="number" id="pallets" min="1" max="33" value="4"></label>
+        <label>Тип вантажу
+          <select id="cargo">
+            <option value="600">Стандартний — 600 ₴/пал.</option>
+            <option value="700">Крихкий — 700 ₴/пал.</option>
+            <option value="800">Температурний — 800 ₴/пал.</option>
+          </select>
+        </label>
+      </div>
+      <div class="checks">
+        <label class="check"><input type="checkbox" id="express"> Терміново (подача 2–4 год) +15%</label>
+        <label class="check"><input type="checkbox" id="customs"> Митне оформлення +2 500 ₴</label>
+        <label class="check"><input type="checkbox" id="loyal"> Я постійний клієнт −10%</label>
+      </div>
+      <div class="calc__result">
+        <span>Орієнтовна вартість:</span>
+        <b id="price">0 ₴</b>
+        <small id="priceNote">Маршрут Київ → Львів</small>
+      </div>
+      <a href="#order" class="btn btn--accent btn--block" id="calcOrder">Зафіксувати ціну та замовити</a>
+    </form>
+  </div>
+</section>
+
+<!-- ===== ТРЕКІНГ ===== -->
+<section class="section" id="tracking">
+  <div class="container track">
+    <div class="section__head section__head--left">
+      <span class="eyebrow">Прозорість 24/7</span>
+      <h2>Відстеження вантажу</h2>
+      <p>Введіть номер замовлення. Для демонстрації спробуйте <button type="button" class="link-btn" data-demo="OZK-2026-0417">OZK-2026-0417</button> або <button type="button" class="link-btn" data-demo="OZK-2026-0102">OZK-2026-0102</button>.</p>
+    </div>
+    <form class="track__form" id="trackForm">
+      <input type="text" id="trackInput" placeholder="Напр.: OZK-2026-0417" aria-label="Номер вантажу">
+      <button class="btn btn--accent" type="submit">Відстежити</button>
+    </form>
+    <div class="track__result" id="trackResult" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ===== ЯК ПРАЦЮЄМО ===== -->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">Процес</span>
+      <h2>Як ми працюємо — 4 кроки</h2>
+    </div>
+    <ol class="steps">
+      <li><span>1</span><h3>Заявка</h3><p>Онлайн-форма, Telegram-бот або дзвінок. Персональний логіст відповідає за 15 хвилин.</p></li>
+      <li><span>2</span><h3>Фіксація ціни</h3><p>Підбираємо авто в TMS, фіксуємо тариф і підписуємо договір через «Вчасно» (КЕП).</p></li>
+      <li><span>3</span><h3>Перевезення</h3><p>Завантаження у вказане вікно, GPS-трекінг та сповіщення про кожен етап.</p></li>
+      <li><span>4</span><h3>Доставка й документи</h3><p>Підтвердження доставки з фото, е-ТТН і акт виконаних робіт — в той же день.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== ПЕРЕВАГИ ===== -->
+<section class="section" id="advantages">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">Чому OZK</span>
+      <h2>Наші переваги</h2>
+    </div>
+    <div class="adv">
+      <div class="adv__item"><b>⏱ 2–4 години</b><p>Швидка подача авто в межах Києва та області — навіть для термінових замовлень.</p></div>
+      <div class="adv__item"><b>📡 GPS + сповіщення</b><p>Інтеграція з Wialon: клієнт бачить авто на карті та отримує статуси автоматично.</p></div>
+      <div class="adv__item"><b>🔋 Енергонезалежність</b><p>Генератори, Starlink і запас пального — диспетчерська працює під час блекаутів.</p></div>
+      <div class="adv__item"><b>🛡 CMR-страхування</b><p>Повна відповідальність перевізника застрахована на кожному рейсі.</p></div>
+      <div class="adv__item"><b>👤 Персональний логіст</b><p>Один менеджер на клієнта 24/7 замість безликого кол-центру.</p></div>
+      <div class="adv__item"><b>💳 Фіксований тариф</b><p>Ціна в договорі не змінюється після доставки. Програма лояльності до −10%.</p></div>
+    </div>
+
+    <div class="compare">
+      <h3>OZK Logistics у порівнянні з ринком</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Критерій</th><th class="hl">OZK Logistics</th><th>Великі поштові оператори</th><th>Класичні B2B-перевізники</th></tr></thead>
+          <tbody>
+            <tr><td>Вартість палети</td><td class="hl">600–800 ₴</td><td>850–1200 ₴</td><td>550–750 ₴</td></tr>
+            <tr><td>Подача авто</td><td class="hl">2–4 год</td><td>за графіком</td><td>наступного дня</td></tr>
+            <tr><td>Персональний менеджер 24/7</td><td class="hl">✔</td><td>—</td><td>частково</td></tr>
+            <tr><td>Фіксовані часові вікна</td><td class="hl">✔</td><td>—</td><td>—</td></tr>
+            <tr><td>Міжнародні рейси до ЄС</td><td class="hl">✔</td><td>✔</td><td>обмежено</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== МАРШРУТИ ===== -->
+<section class="section section--soft" id="routes">
+  <div class="container routes">
+    <div>
+      <span class="eyebrow">Географія</span>
+      <h2>Регулярні маршрути</h2>
+      <p>Хаб у Києві, щоденні рейси Центральним і Західним регіонами та 3 рази на тиждень — до ЄС.</p>
+      <ul class="route-list">
+        <li><b>Київ → Львів → Варшава</b><span>2–3 дні · пн, ср, пт</span></li>
+        <li><b>Київ → Рівне → Берлін</b><span>3–4 дні · вт, пт</span></li>
+        <li><b>Київ → Вінниця → Бухарест</b><span>3 дні · чт</span></li>
+        <li><b>Київ ⇄ обласні центри</b><span>24 год · щодня</span></li>
+      </ul>
+    </div>
+    <svg class="map" viewBox="0 0 480 300" aria-label="Схема маршрутів">
+      <rect width="480" height="300" rx="20" fill="#0B1F3A"/>
+      <g stroke="#FF7A00" stroke-width="2.5" fill="none" stroke-dasharray="6 6" class="route-line">
+        <path d="M340 150 Q 260 120 200 130 Q 150 120 120 95"/>
+        <path d="M340 150 Q 250 150 160 110 Q 90 90 60 85"/>
+        <path d="M340 150 Q 300 210 250 250"/>
+      </g>
+      <g font-family="Inter" font-size="13" fill="#cfe0ff">
+        <circle cx="340" cy="150" r="10" fill="#FF7A00"/><text x="352" y="146">Київ (хаб)</text>
+        <circle cx="200" cy="130" r="6" fill="#fff"/><text x="185" y="152">Львів</text>
+        <circle cx="120" cy="95" r="6" fill="#fff"/><text x="100" y="80">Варшава</text>
+        <circle cx="60" cy="85" r="6" fill="#fff"/><text x="30" y="70">Берлін</text>
+        <circle cx="250" cy="250" r="6" fill="#fff"/><text x="262" y="262">Бухарест</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== ВІДГУКИ ===== -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">Відгуки</span>
+      <h2>Нам довіряють</h2>
+    </div>
+    <div class="reviews">
+      <blockquote><p>«Возимо будматеріали Київ — Львів двічі на тиждень. Жодного зриву вікна розвантаження за пів року.»</p><cite>Ірина К., логіст виробника сухих сумішей</cite></blockquote>
+      <blockquote><p>«Найбільше цінуємо, що ціна не змінюється після рейсу. І менеджер на зв’язку навіть під час блекауту.»</p><cite>Андрій М., власник інтернет-магазину меблів</cite></blockquote>
+      <blockquote><p>«Допомогли з митницею на експорт до Польщі — документи підписали онлайн, авто вийшло в той же день.»</p><cite>Олена Т., експортер агропродукції</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section section--soft" id="faq">
+  <div class="container faq">
+    <div class="section__head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Часті запитання</h2>
+    </div>
+    <details open><summary>Які мінімальні обсяги вантажу ви приймаєте?</summary><p>Для збірних (LTL) перевезень — від 1 палети. Для окремого авто (FTL) обмежень немає: ви оплачуєте лише кілометраж.</p></details>
+    <details><summary>Чи працюєте ви з ПДВ?</summary><p>Так. Для співпраці з платниками ПДВ ми надаємо податкові накладні та всі закривальні документи в електронному вигляді.</p></details>
+    <details><summary>Як відбувається страхування вантажу?</summary><p>Кожен рейс покривається CMR-страхуванням відповідальності перевізника. За бажанням можна додатково застрахувати вантаж на повну оголошену вартість.</p></details>
+    <details><summary>Що буде, якщо авто затримається на кордоні?</summary><p>Логіст заздалегідь обирає пункт пропуску з найменшою чергою (eЧерга), а ви отримуєте сповіщення про будь-яку зміну прогнозу доставки.</p></details>
+    <details><summary>Як підписати договір дистанційно?</summary><p>Через сервіс «Вчасно» з КЕП — займає 5 хвилин. Паперові оригінали надсилаємо за потреби.</p></details>
+  </div>
+</section>
+
+<!-- ===== ФОРМА ЗАМОВЛЕННЯ ===== -->
+<section class="section section--dark" id="order">
+  <div class="container order">
+    <div>
+      <span class="eyebrow eyebrow--light">Заявка</span>
+      <h2>Замовте авто — передзвонимо за 15 хвилин</h2>
+      <p>Або напишіть нашому Telegram-боту — там же можна відстежити статус вантажу.</p>
+      <div class="order__contacts">
+        <a href="https://t.me/" target="_blank" rel="noopener" class="btn btn--ghost">✈ Telegram-бот</a>
+        <a href="tel:+380441234567" class="btn btn--ghost">📞 Подзвонити</a>
+      </div>
+    </div>
+    <form class="order__form" id="orderForm" novalidate>
+      <label>Ім’я та компанія* <input type="text" name="name" required placeholder="Олег, ТОВ «Будмакс»"></label>
+      <label>Телефон* <input type="tel" name="phone" required placeholder="+380 __ ___ __ __"></label>
+      <label>E-mail <input type="email" name="email" placeholder="logist@company.ua"></label>
+      <label>Маршрут і вантаж <textarea name="msg" rows="3" placeholder="Київ → Львів, 6 палет, 21.11"></textarea></label>
+      <label class="check"><input type="checkbox" name="agree" required> Погоджуюся на обробку персональних даних</label>
+      <button class="btn btn--accent btn--block" type="submit">Надіслати заявку</button>
+      <p class="form-msg" id="formMsg" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ===== ПІДВАЛ ===== -->
+<footer class="footer" id="contacts">
+  <div class="container footer__grid">
+    <div>
+      <a href="#hero" class="logo logo--light"><span class="logo__mark">OZK</span><span class="logo__text">Logistics</span></a>
+      <p>ТОВ «ОЗК ЛОГІСТИК» — вантажоперевезення по Україні та в ЄС для малого й середнього бізнесу.</p>
+    </div>
+    <div>
+      <h4>Послуги</h4>
+      <a href="#services">Перевезення FTL / LTL</a>
+      <a href="#services">Міжнародні рейси</a>
+      <a href="#services">Митний супровід</a>
+      <a href="#calculator">Калькулятор вартості</a>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <a href="tel:+380441234567">+38 (044) 123-45-67</a>
+      <a href="mailto:info@ozk-logistics.com.ua">info@ozk-logistics.com.ua</a>
+      <span>м. Київ, вул. Логістична, 1 (хаб)</span>
+      <span>Диспетчерська: 24/7</span>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <span>© <b>Олександр Захарчук</b> 2026, <a href="mailto:o.zakharchuk@knute.edu.ua">o.zakharchuk@knute.edu.ua</a></span>
+      <span>Сайт розроблено Олександром Захарчуком (ФЕМП, 3 курс, 16 група, ДТЕУ) з використанням ШІ · навчальний проєкт</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#order" class="fab" aria-label="Швидка заявка">✈</a>
+
+<script src="script.js"></script>
+</body>
+</html>
